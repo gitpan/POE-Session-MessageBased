@@ -1,0 +1,7 @@
+# $Id: MANIFEST,v 1.1.1.1 2003/03/21 05:55:23 troc Exp $
+CHANGES
+MANIFEST
+Makefile.PL
+MessageBased.pm
+README
+t/01_basic.t
