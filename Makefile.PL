@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: Makefile.PL 11 2009-02-23 08:29:23Z rcaputo $
+# $Id: Makefile.PL 14 2009-07-28 06:44:34Z rcaputo $
 
 use ExtUtils::MakeMaker;
 
@@ -15,6 +15,12 @@ WriteMakefile(
 	PM            => {
 		'MessageBased.pm' => '$(INST_LIBDIR)/MessageBased.pm'
 	},
+	META_ADD     => {
+		resources  => {
+			license    => 'http://dev.perl.org/licenses/',
+			repository => 'http://thirdlobe.com/svn/pose-messagebased/trunk'
+		},
+	},
 	dist          => {
 		'COMPRESS'  => 'gzip -9f',
 		'SUFFIX'    => 'gz',
@@ -24,7 +30,7 @@ WriteMakefile(
 		),
 	},
 	PREREQ_PM     => {
-		'POE'        => 0.31,
+		'POE'        => 1.007,
 		'Test::More' => 0,
 	},
 );
