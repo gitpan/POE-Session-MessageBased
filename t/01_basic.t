@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-# $Id: 01_basic.t 11 2009-02-23 08:29:23Z rcaputo $
 
 use warnings;
 use strict;
